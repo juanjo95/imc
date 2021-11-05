@@ -1,0 +1,51 @@
+.vista{
+  height:100vh;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 30px;
+  background-color: #0A0E21;
+}
+
+.fondo-item {
+  background-color: #FF111328;
+  border-radius: 20px;
+  height: 100%;
+}
+
+.alturaCaja {
+  height: 480px;
+}
+
+.row {
+  padding: 10px;
+}
+
+.btn-color {
+  background-color: #FF3366;
+  border-color: #FF3366;
+  border-radius: 25px;
+}
+
+.resultado {
+  color: #12bd45;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.estilo-numero{
+  font-size: 80px;
+  font-weight: 700;
+  color: white;
+  padding-top: 25px;
+  padding-bottom: 45px;
+}
+
+.interpretacion{
+  text-align: center;
+  margin: 10px;
+  font-size: 18px;
+}
+

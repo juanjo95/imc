@@ -1,0 +1,69 @@
+<div class="container vista">
+  <div class="row d-flex align-items-center h-100">
+    <div class="col-md-4 offset-md-4">
+      <div class="card">
+        <h5 class="text-white">CALCULAR IMC</h5>
+        <div class="row altura-caja">
+          <div class="col-6">
+            <div class="fondo-item" [ngClass]="sexo === 'Femenino' ? 'sexoDesactivo' : ''">
+              <div class="d-flex flex-column justify-content-center align-items-center h-100 text-white cursor" (click)="masculino()">
+                <i class="fas fa-mars sexo"></i>
+                <p>Masculino</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="fondo-item" [ngClass]="sexo === 'Masculino' ? 'sexoDesactivo' : ''">
+              <div class="d-flex flex-column justify-content-center align-items-center h-100 text-white cursor" (click)="femenino()">
+                <i class="fas fa-venus sexo"></i>
+              <p>Femenino</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row altura-caja">
+          <div class="col-12">
+            <div class="fondo-item">
+              <div class="d-flex flex-column justify-content-center align-items-center h-100 text-white">
+                <p>Altura</p>
+                <div class="estilo-numero">
+                  {{altura}} <span class="cm">cm</span>
+                </div>
+                <input type="range" [value]="altura" min="120" max="220" class="form-range w-75" (input)="cambiarAltura($event)">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row altura-caja">
+          <div class="col-6">
+            <div class="fondo-item">
+              <div class="d-flex flex-column justify-content-center align-items-center h-100 text-white">
+                <p>Peso (kg)</p>
+                <div class="estilo-numero pt-3">{{ peso }}</div>
+                <div>
+                  <span (click)="controlPeso()"><i class="fas fa-minus suma-resta"></i></span>
+                  <span (click)="controlPeso(true)"><i class="fas fa-plus suma-resta"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="fondo-item">
+              <div class="d-flex flex-column justify-content-center align-items-center h-100 text-white">
+                <p>Edad (años)</p>
+                <div class="estilo-numero pt-3">{{edad}}</div>
+                <div>
+                  <span (click)="controlEdad()"><i class="fas fa-minus suma-resta"></i></span>
+                  <span (click)="controlEdad(true)"><i class="fas fa-plus suma-resta"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <button class="btn btn-block btn-lg btn-color text-white" (click)="calcular()">CALCULAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

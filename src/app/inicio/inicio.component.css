@@ -1,0 +1,69 @@
+.vista{
+  height:100vh;
+}
+
+.card{
+  padding: 20px;
+  border-radius: 30px;
+  background-color: #0a0e21;
+}
+
+.fondo-item{
+  background-color: #ff111328;
+  border-radius: 20px;
+  height: 100%;
+}
+
+.altura-caja{
+  height: 160px;
+}
+
+.row{
+  padding: 10px;
+}
+
+.sexo{
+  color: white;
+  font-size: 40px;
+}
+
+.estilo-numero{
+  font-size: 32px;
+  font-weight: 800;
+  margin-top: -30px;
+  color: white;
+}
+
+.cm{
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: -10px;
+}
+
+input[type=range]::-webkit-slider-thumb{
+  background: #ff3366;
+}
+
+.suma-resta{
+  cursor: pointer;
+  font-size: 35px;
+  background-color: #ff4c4f5e;
+  padding: 7px;
+  border-radius: 15px;
+  margin-left: 3px;
+}
+
+.btn-color{
+  background-color: #ff3366;
+  border-color: #ff3366;
+  border-radius: 25px;
+}
+
+.cursor{
+  cursor: pointer;
+}
+
+.sexoDesactivo{
+  background-color: #7d2f2f33;
+}
+

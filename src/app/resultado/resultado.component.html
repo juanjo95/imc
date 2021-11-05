@@ -1,0 +1,23 @@
+<div class="container vista">
+  <div class="row d-flex align-items-center h-100">
+    <div class="col-md-4 offset-md-4">
+      <div class="card">
+        <h5 class="text-white">Tu resultado</h5>
+        <div class="row alturaCaja">
+          <div class="col-12">
+            <div class="fondo-item">
+              <div class="d-flex flex-column justify-content-center align-items-center h-100">
+                <p class="resultado">{{ resultado }}</p>
+                <div class="estilo-numero">{{ bmi }}</div>
+                <p class="interpretacion text-white">{{ interpretacion }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <button class="btn btn-block btn-lg btn-color text-white" routerLink="/">RE-CALCULAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
